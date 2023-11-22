@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-Runner-Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="ContactTests.CreateContactWithOrganisation">
+        <methods>
+          <include name="CreateContactWithOrganisation"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="acConfig"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+        </methods>
+      </class> <!-- ContactTests.CreateContactWithOrganisation -->
+    </classes>
+  </test> <!-- Test-Runner-Firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-Runner-Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="ContactTests.CreateContactWithOrganisation">
+        <methods>
+          <include name="CreateContactWithOrganisation"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="acConfig"/>
+          <include name="bcConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+        </methods>
+      </class> <!-- ContactTests.CreateContactWithOrganisation -->
+    </classes>
+  </test> <!-- Test-Runner-Edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
